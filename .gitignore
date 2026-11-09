@@ -1,0 +1,42 @@
+# macOS and editors
+.DS_Store
+.vscode/
+.idea/
+
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+
+# Jupyter temporary files (not notebook outputs)
+.ipynb_checkpoints/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+kaggle.json
+
+# Downloaded or prepared audio datasets
+/data/raw/
+/data/downloads/
+/data/prepared/
+/data/*.zip
+
+# Large Modal training artifacts
+/results/downloads/
+/results/**/*.pt
+/results/**/*.npy
+
+# Temporary files
+*.tmp
+*.partial

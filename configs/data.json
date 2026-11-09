@@ -1,0 +1,17 @@
+{
+  "audio": {
+    "sample_rate": 8000,
+    "duration_seconds": 0.65,
+    "n_fft": 512,
+    "hop_length": 32,
+    "n_mels": 128,
+    "f_min": 0.0,
+    "f_max": 4000.0,
+    "top_db": 80.0
+  },
+  "seed": 42,
+  "validation_fraction": 0.1,
+  "test_fraction": 0.2,
+  "split_mode": "recording",
+  "decode_workers": 4
+}

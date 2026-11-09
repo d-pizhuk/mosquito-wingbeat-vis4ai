@@ -1,0 +1,20 @@
+{
+  "configuration_fingerprint": "7c0c560a3ec863e724fa807077b031f06d561519266b6f595445d27539bd56c2",
+  "preparation_id": "wingbeats-v1",
+  "result": {
+    "warmup_samples_per_second": 4357.544625188971,
+    "finetune_samples_per_second": 3198.4866786744774,
+    "validation_samples_per_second": 272.69547604741416,
+    "training_samples": 195695,
+    "validation_samples": 27957,
+    "epochs": 10,
+    "projected_train_validation_hours": 0.45021433074245415,
+    "projected_compute_usd": 1.267313722178903,
+    "projected_compute_usd_with_20_percent_margin": 1.5207764666146837,
+    "within_configured_time_budget_with_margin": true,
+    "peak_gpu_memory_gib": 1.7930889129638672,
+    "benchmark_seconds_excluding_staging": 56.74169729,
+    "dataset_fingerprint": "e4a8d99bb8297a7a41e134d0a8be16c786dad677999c62ab8bc6663ac6a6d491",
+    "note": "Actual measured throughput, but the extrapolation excludes initial staging, checkpoint writes, cold starts and other jobs. Benchmark weights are discarded."
+  }
+}

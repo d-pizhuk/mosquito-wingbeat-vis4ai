@@ -1,0 +1,7 @@
+{
+  "cpu_cores": 4,
+  "gpu": "A100-80GB",
+  "host_memory_gib": 16,
+  "preparation_id": "wingbeats-v1",
+  "run_id": "r50-cbam-full-001"
+}

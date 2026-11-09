@@ -1,0 +1,77 @@
+{
+  "class_counts": {
+    "test": {
+      "Ae. aegypti": 17111,
+      "Ae. albopictus": 4046,
+      "An. arabiensis": 3860,
+      "An. gambiae": 9894,
+      "C. pipiens": 6083,
+      "C. quinquefasciatus": 14920
+    },
+    "train": {
+      "Ae. aegypti": 59887,
+      "Ae. albopictus": 14162,
+      "An. arabiensis": 13507,
+      "An. gambiae": 34630,
+      "C. pipiens": 21290,
+      "C. quinquefasciatus": 52219
+    },
+    "validation": {
+      "Ae. aegypti": 8555,
+      "Ae. albopictus": 2023,
+      "An. arabiensis": 1930,
+      "An. gambiae": 4947,
+      "C. pipiens": 3042,
+      "C. quinquefasciatus": 7460
+    }
+  },
+  "class_names": [
+    "Ae. aegypti",
+    "Ae. albopictus",
+    "An. gambiae",
+    "An. arabiensis",
+    "C. pipiens",
+    "C. quinquefasciatus"
+  ],
+  "data_config": {
+    "audio": {
+      "duration_seconds": 0.65,
+      "f_max": 4000.0,
+      "f_min": 0.0,
+      "hop_length": 32,
+      "n_fft": 512,
+      "n_mels": 128,
+      "sample_rate": 8000,
+      "top_db": 80.0
+    },
+    "decode_workers": 4,
+    "seed": 42,
+    "split_mode": "recording",
+    "test_fraction": 0.2,
+    "validation_fraction": 0.1
+  },
+  "dataset_fingerprint": "e4a8d99bb8297a7a41e134d0a8be16c786dad677999c62ab8bc6663ac6a6d491",
+  "duplicates_removed": 279566,
+  "manifest_sha256": "ca4d8ae34c25358dfce7f1fc1767419447c7b7c0ccfd5bf82786aa0383399fec",
+  "preparation": "new split; center crop/zero pad; DC removal; exact canonical-input deduplication",
+  "recordings_discovered": 559132,
+  "recordings_retained": 279566,
+  "schema_version": 1,
+  "source": {
+    "kind": "kaggle",
+    "request": {
+      "groups_sha256": null,
+      "kaggle_handle": "potamitis/wingbeats",
+      "upload_path": null
+    },
+    "resolved_cache_path": "/tmp/kagglehub/datasets/potamitis/wingbeats/versions/1"
+  },
+  "split_scope": "recording-level; not an unseen-individual/session guarantee",
+  "waveform_array_shape": [
+    559132,
+    5200
+  ],
+  "waveform_dtype": "float32",
+  "waveform_file_bytes": 11629945728,
+  "waveform_file_sha256": "fb5317b1f32bd79b57df350721329e4c8cfb92bce5e1c76e2e476e8412ff1cc2"
+}

@@ -1,0 +1,16 @@
+{
+  "cuda_version": "12.8",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "packages": {
+    "librosa": "0.11.0",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "soundfile": "0.13.1",
+    "torch": "2.10.0+cu128",
+    "torchvision": "0.25.0+cu128"
+  },
+  "platform": "Linux-4.19.0-gvisor-x86_64-with-glibc2.36",
+  "python": "3.11.12",
+  "source_fingerprint": "4b5e49dd74e6ee46bd758f6aa697985718004d4f474cd07eda02f900e892757d"
+}

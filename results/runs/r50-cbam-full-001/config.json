@@ -1,0 +1,41 @@
+{
+  "attention_lr": 0.0002,
+  "augment": true,
+  "backbone_lr": 3e-05,
+  "batch_size": 128,
+  "budget_safety_factor": 1.15,
+  "checkpoint_every_seconds": 180.0,
+  "class_weighting": true,
+  "compute_budget_usd": 20,
+  "deterministic": false,
+  "epochs": 10,
+  "estimated_usd_per_second": 0.00078192,
+  "freeze_bn_stats": true,
+  "frequency_mask_bins": 8,
+  "gradient_clip": 1.0,
+  "head_lr": 0.001,
+  "label_smoothing": 0.05,
+  "log_every_steps": 25,
+  "max_hours": 6,
+  "max_train_samples": null,
+  "max_validation_samples": null,
+  "min_delta": 0.001,
+  "model": {
+    "attention_stages": [
+      2,
+      3
+    ],
+    "dropout": 0.2,
+    "pretrained": true,
+    "reduction": 16,
+    "spatial_kernel": 7
+  },
+  "num_workers": 4,
+  "patience": 3,
+  "precision": "bf16",
+  "seed": 42,
+  "time_mask_frames": 8,
+  "unfreeze_from_stage": 2,
+  "warmup_epochs": 1,
+  "weight_decay": 0.0001
+}

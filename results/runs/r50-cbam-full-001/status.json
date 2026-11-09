@@ -1,0 +1,16 @@
+{
+  "allowed_seconds": 21600,
+  "bad_epochs": 1,
+  "best_epoch": 9,
+  "best_macro_f1": 0.9072940499502394,
+  "budget_note": "estimate only; excludes other jobs, image builds, cold starts, storage and pricing changes",
+  "dataset_fingerprint": "e4a8d99bb8297a7a41e134d0a8be16c786dad677999c62ab8bc6663ac6a6d491",
+  "elapsed_seconds": 1137.872733567,
+  "epoch": 10,
+  "estimated_compute_usd": 0.8897254478307086,
+  "global_step": 15290,
+  "next_batch": 0,
+  "status": "completed",
+  "training_samples": 195695,
+  "validation_samples": 27957
+}

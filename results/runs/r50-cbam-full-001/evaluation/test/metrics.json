@@ -1,0 +1,101 @@
+{
+  "accuracy": 0.9314304109883035,
+  "balanced_accuracy": 0.9054804916479436,
+  "checkpoint_epoch": 9,
+  "checkpoint_sha256": "602984fbe3cffb177334e32312977dc69c4b07218d29900a23d9874b746dc7df",
+  "confusion_matrix": [
+    [
+      16156,
+      280,
+      72,
+      102,
+      233,
+      268
+    ],
+    [
+      398,
+      3501,
+      40,
+      41,
+      50,
+      16
+    ],
+    [
+      64,
+      27,
+      9153,
+      619,
+      16,
+      15
+    ],
+    [
+      75,
+      32,
+      643,
+      3032,
+      46,
+      32
+    ],
+    [
+      253,
+      23,
+      18,
+      39,
+      5714,
+      36
+    ],
+    [
+      263,
+      11,
+      19,
+      59,
+      44,
+      14524
+    ]
+  ],
+  "dataset_fingerprint": "e4a8d99bb8297a7a41e134d0a8be16c786dad677999c62ab8bc6663ac6a6d491",
+  "loss": 0.22642513671802955,
+  "macro_f1": 0.9071272243317839,
+  "per_class": {
+    "Ae. aegypti": {
+      "f1": 0.9414918414918414,
+      "precision": 0.9388110872218025,
+      "recall": 0.9441879492723979,
+      "support": 17111
+    },
+    "Ae. albopictus": {
+      "f1": 0.8840909090909091,
+      "precision": 0.9037170882808466,
+      "recall": 0.8652990608007909,
+      "support": 4046
+    },
+    "An. arabiensis": {
+      "f1": 0.782249742002064,
+      "precision": 0.7790339157245632,
+      "recall": 0.7854922279792746,
+      "support": 3860
+    },
+    "An. gambiae": {
+      "f1": 0.922727960078633,
+      "precision": 0.9203619909502262,
+      "recall": 0.9251061249241965,
+      "support": 9894
+    },
+    "C. pipiens": {
+      "f1": 0.9377974725094371,
+      "precision": 0.9362608553170572,
+      "recall": 0.9393391418707875,
+      "support": 6083
+    },
+    "C. quinquefasciatus": {
+      "f1": 0.974405420817819,
+      "precision": 0.9753542408166006,
+      "recall": 0.9734584450402145,
+      "support": 14920
+    }
+  },
+  "samples": 55914,
+  "seconds": 28.815488177999995,
+  "split": "test",
+  "warning": "Softmax confidence is uncalibrated; spectral_peak_hz is not necessarily the fundamental frequency."
+}

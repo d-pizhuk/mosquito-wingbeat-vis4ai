@@ -32,10 +32,8 @@ kaggle.json
 /data/prepared/
 /data/*.zip
 
-# Large Modal training artifacts
+# Duplicate downloaded training archive
 /results/downloads/
-/results/**/*.pt
-/results/**/*.npy
 
 # Temporary files
 *.tmp

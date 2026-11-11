@@ -27,6 +27,7 @@ htmlcov/
 kaggle.json
 
 # Downloaded or prepared audio datasets
+/data/Wingbeats
 /data/raw/
 /data/downloads/
 /data/prepared/

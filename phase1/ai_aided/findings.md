@@ -1,4 +1,4 @@
-# Phase I findings (AI-aided pair): how does the wingbeat classifier behave?
+﻿# Phase I findings (AI-aided pair): how does the wingbeat classifier behave?
 
 Model: ResNet-50 + CBAM on log-Mel spectrograms, run `r50-cbam-full-001`. Data: the 55,914 test
 recordings (93.1% accuracy, 3,834 errors). The model is treated as a black box. All figures and

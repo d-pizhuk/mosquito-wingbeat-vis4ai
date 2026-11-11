@@ -38,3 +38,5 @@ kaggle.json
 # Temporary files
 *.tmp
 *.partial
+# Phase I generated caches (rebuild with phase1/ai_aided/extract_features.py and run_probes.py)
+/phase1/ai_aided/cache/

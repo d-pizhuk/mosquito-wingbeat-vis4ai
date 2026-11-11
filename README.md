@@ -80,7 +80,13 @@ The settings are in `configs/data.json` and `configs/full.json`. The complete tr
 
 ## Phase I
 
-Both pairs use the same model and test predictions, but analyze the model's behavior separately. We focus on which species are confused, prediction confidence and patterns in the classification errors.
+Both pairs use the same model and test predictions, but analyze the model's behavior separately.
+
+In the human-only analysis, we investigated which mosquito species the model confuses the most, how confident it is when making mistakes, and whether recording characteristics and recording sessions are related to these mistakes.
+
+We found that the model often confuses *An. arabiensis* with *An. gambiae*. We also found that recordings with lower estimated SNR tend to have more mistakes, although we cannot say for sure that background noise is the reason.
+
+The detailed analysis and conclusions are available in `phase1/human_only/`.
 
 In Phase II, we plan to study internal model behavior, including CBAM attention maps. Attention maps alone do not prove why the model made a prediction.
 

@@ -78,17 +78,39 @@ The settings are in `configs/data.json` and `configs/full.json`. The complete tr
 | `reports/` | AI interaction record and reflection |
 | `presentation/` | Progress video link |
 
-## Phase I
+## Phase I - midpoint analysis
 
-Both pairs use the same model and test predictions, but analyze the model's behavior separately.
+In Phase I, both pairs treated the model as a **black box**, using recordings and predictions to understand its behavior beyond overall accuracy. Both pairs worked with the same six-class model and **55,914 test recordings**, but investigated different questions.
 
-In the human-only analysis, we investigated which mosquito species the model confuses the most, how confident it is when making mistakes, and whether recording characteristics and recording sessions are related to these mistakes.
+### Human-only pair
 
-We found that the model often confuses *An. arabiensis* with *An. gambiae*. We also found that recordings with lower estimated SNR tend to have more mistakes, although we cannot say for sure that background noise is the reason.
+We investigated species confusion, prediction confidence, recording characteristics and differences between recording sessions.
 
-The detailed analysis and conclusions are available in `phase1/human_only/`.
+- The most common confusion is *An. arabiensis* predicted as *An. gambiae* (**16.7%** of *An. arabiensis* test recordings). The reverse confusion is **6.3%**.
+- Wrong predictions generally have lower confidence, but some mistakes are still made with high confidence.
+- For *An. arabiensis*, lower **estimated session-based SNR** is associated with more mistakes (**about 18-20%** in lower-SNR groups versus **about 11%** in the highest group). This does not prove that background noise causes the errors.
+- Signal strength shows a weaker relationship; edge activity has no clear connection to the mistakes. Performance also varies between recording sessions.
 
-In Phase II, we plan to study internal model behavior, including CBAM attention maps. Attention maps alone do not prove why the model made a prediction.
+[Analysis notebook](phase1/human_only/analysis.ipynb) | [Detailed findings](phase1/human_only/findings.md)
+
+### AI-aided pair
+
+We explored wingbeat-frequency patterns, confidence, recording sessions and how the model responds to modified audio inputs.
+
+- Some species show different wingbeat-frequency groups with noticeably different classification performance. In particular, the frequencies of *An. gambiae* and *An. arabiensis* overlap strongly.
+- Pitch-shifting and frequency-band removal experiments suggest that the model uses both wingbeat pitch and harmonic information, rather than a single frequency alone.
+- Errors are concentrated in some recording sessions, and the model can produce confident but incorrect answers. The analyses also investigated how weak or noisy signals affect predictions.
+- These experiments show possible reasons for errors, but they do not establish a definite causal explanation.
+
+[Analysis notebook](phase1/ai_aided/analysis.ipynb) | [Additional analysis](phase1/ai_aided/analysis_paul.ipynb) | [Findings](phase1/ai_aided/findings.md) | [Additional findings](phase1/ai_aided/findings_paul.md)
+
+### Midpoint materials
+
+- [AI interaction record](reports/ai_interactions_phase1.md)
+- [GenAI reflection](reports/genai_reflection_phase1.md)
+- [Progress video link](presentation/video_link.md)
+
+In **Phase II**, we plan to investigate what the model learned by examining its internal representations and CBAM attention maps, focusing on the error patterns found in Phase I. Attention maps alone do not prove why the model made a prediction.
 
 ## References
 
